@@ -1,0 +1,44 @@
+{
+  "experiences": [
+    {
+      "title": "Trekking in the Himalayas",
+      "imageUrl": "https://www.triptipedia.com/tip/img/PyaGqRXAo.jpg",
+      "countries": 3,
+      "days": 12,
+      "offset": 5470,
+      "rating": 4.8
+    },
+    {
+      "title": "Safari in Serengeti National Park",
+      "imageUrl": "https://i1.wp.com/www.travelwideflightsuk.co.uk/News/wp-content/uploads/2017/06/TravelWideFlights.jpg?ssl=1",
+      "countries": 1,
+      "days": 7,
+      "offset": 2000,
+      "rating": 4.9
+    },
+    {
+      "title": "Scuba Diving in the Great Barrier Reef",
+      "imageUrl": "https://www.triptipedia.com/tip/img/PyaGqRXAo.jpg",
+      "countries": 1,
+      "days": 3,
+      "offset": 710,
+      "rating": 4.7
+    },
+    {
+      "title": "Rafting the Grand Canyon",
+      "imageUrl": "https://i1.wp.com/www.travelwideflightsuk.co.uk/News/wp-content/uploads/2017/06/TravelWideFlights.jpg?ssl=1",
+      "countries": 1,
+      "days": 14,
+      "offset": 1700,
+      "rating": 3.1
+    },
+    {
+      "title": "Biking the Camino de Santiago",
+      "imageUrl": "https://www.triptipedia.com/tip/img/PyaGqRXAo.jpg",
+      "countries": 2,
+      "days": 21,
+      "offset": 4300,
+      "rating": 4.5
+    }
+  ]
+}

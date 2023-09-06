@@ -1,0 +1,9 @@
+{
+  "name": "chooose",
+  "scripts": {
+    "start": "npm run start-be & npm run start-fe",
+    "start-fe": "cd app && npm run start",
+    "start-be": "cd server && npm run start"
+  },
+  "dependencies": {}
+}
