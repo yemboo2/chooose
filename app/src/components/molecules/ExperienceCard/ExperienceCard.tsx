@@ -17,7 +17,13 @@ const ExperienceCard = ({ title, imageUrl, days, countries, offset, rating }: IE
   const isTonsOffset = offset >= 1000;
   const offsetText = `${isTonsOffset ? `${Math.round(offset / 10) / 100} t` : `${Math.round(offset)} kg`}CO2e`;
 
-  // TODO: add shadow to image
+  // FIXME: Depending on other components in the project we
+  // could extract some code here into separate components
+
+  // FIXME: linear-gradient image-overlay solution should be
+  // improved to not use zIndex
+
+  // FIXME: Responsiveness could be improved
   return (
     <Box
       position="relative"

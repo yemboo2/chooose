@@ -6,6 +6,7 @@ interface IExperienceListProps {
   experiences: IExperience[];
 }
 
+// FIXME: possibly change layout to a SimpleGrid when on mobileMode (useMediaQuery)
 const ExperienceList = ({ experiences }: IExperienceListProps) => (
   <Box overflowX="auto" maxHeight="400px">
     <HStack spacing={4}>
@@ -25,23 +26,3 @@ const ExperienceList = ({ experiences }: IExperienceListProps) => (
 );
 
 export default ExperienceList;
-
-{
-  /* </Box>
-  <Box display="flex">
-
-    {experiences.map((exp) => (
-      <Box m={3}>
-        <ExperienceCard
-          key={exp.title}
-          title={exp.title}
-          imageUrl={exp.imageUrl}
-          countries={exp.countries}
-          days={exp.days}
-          offset={exp.offset}
-          rating={exp.rating}
-        />
-      </Box>
-    ))}
-  </Box> */
-}

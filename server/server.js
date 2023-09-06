@@ -9,17 +9,10 @@ const io = socketIo(server);
 
 const JSON_FILE_PATH = './data.json';
 
-// Serve the HTML and JavaScript for the client
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
-});
-
-// Read the initial data from the JSON file
 let data = JSON.parse(fs.readFileSync(JSON_FILE_PATH, 'utf8'));
 
-// Handle socket.io connections
 io.on('connection', (socket) => {
-  console.log('A user connected');
+  console.log('connected');
 
   // Send the initial data to the client
   socket.emit('initialData', data.experiences);
@@ -33,13 +26,11 @@ io.on('connection', (socket) => {
     }
   });
 
-  // Handle disconnections
   socket.on('disconnect', () => {
-    console.log('A user disconnected');
+    console.log('disconnected');
   });
 });
 
-// Start the server
 const port = 3001;
 server.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);

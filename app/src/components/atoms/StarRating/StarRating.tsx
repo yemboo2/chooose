@@ -24,6 +24,7 @@ const StarRating = ({ rating }: IRatingProps) => {
     return <Icon key={`star-${index}`} as={FaStar} boxSize={5} sx={{ fill: `url(#linearColors-${fillingTyp})` }} />;
   });
 
+  // FIXME: Could be optimized across component instances - avoid duplication
   const svgs = () => (
     <>
       <svg width={0} height={0}>
